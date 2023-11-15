@@ -8,7 +8,42 @@ function generatePassword() {
   var specialChar = "!@#$%^&*()?.<\>|=+:;,[-_]";
   var numbers = "0123456789";
 
-  
+  // Prompt to choose password length
+  var passLength = prompt ("Enter password length. Password must be between 8 to 128 characters.");
+
+  // Validate password length
+  if (passLength < 8 || passLength > 128 ) {
+    alert("Please enter number between 8 and 128.");
+    return;
+  }
+
+  // Prompt on which character set to include
+  var includeUpper = confirm ("Include uppercase letters?");
+  var includeLower = confirm ("Include lowercase letters?");
+  var includeSpecial = confirm ("Include special characters?");
+  var includeNumbers = confirm ("Include numbers?");
+
+// Validate character set was chosen
+if (!includeUpper && !includeLower && !includeSpecial) {
+  alert("Please choose a character set.");
+  return;
+}
+
+// Build password based on selections
+let allChar = '';
+if (includeUpper) {
+  allChar += upperCase;
+}
+if (includeLower) {
+  allChar += lowerCase;
+}
+if (includeSpecial) {
+  allChar += specialChar;
+}
+if (includeNumbers) {
+  allChar += numbers;
+}
+
 }
 
 // Write password to the #password input
@@ -24,18 +59,4 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 
-/* GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
+
