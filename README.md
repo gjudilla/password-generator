@@ -2,7 +2,7 @@
 
 ## Description
 
-I was given the design elements, HTML and CSS code as well as a few starting functions of JavaScript, for a non-functional random password generator (provided in UCB Bootcamp Challenge Repository). I made edits soley to the JavaScript file to create a working password generator that allows the user to create a password between 8 to 128 characters in length at the simple click of a button. The user is able to select from a series of prompts on whether they would like their password to include uppercase or lowercase letters, special characters, and/or numbers. 
+I was given the design elements, HTML and CSS code as well as a few starting functions of JavaScript (provided in UCB Bootcamp Challenge Repository), for a random password generator, made with the intention of producing secure passwords of employees that handle sensitive data. Initially non-functional, I made edits soley to the JavaScript file to create a working password generator that allows the user to create a password between 8 to 128 characters in length at the simple click of a button. The user is able to select from a series of prompts on whether they would like their password to include uppercase or lowercase letters, special characters, and/or numbers. 
 
 ## Installation
 
@@ -21,4 +21,4 @@ Thank you to my bootcamp instructors and classmates. Office hours and study grou
 
 ## License
 
-N/A
+MIT license. See repository. 
