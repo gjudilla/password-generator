@@ -12,7 +12,7 @@ N/A
 
 To use this password generator, click the 'Generate Password' button on the website. You will be given a series of prompts to help construct your desired password (ie. if you would like your password to contain uppercase letters, lowercase letters, special characters, or numbers). At least one character set must be chosen to receive a password. Note: passwords must also be 8 to 128 characters in length. If a value was input erroneously or does not satisfy the criteria needed to generate a password, a prompt will appear to correct this error. When all criteria has been satisfied, your randomly generated password will populate.
 
-To receive your randomly generated password, click this link: http://127.0.0.1:5501/index.html
+To receive your randomly generated password, click this link: https://gjudilla.github.io/password-generator/
 
 
 ## Credits
