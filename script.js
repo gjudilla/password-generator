@@ -46,6 +46,8 @@ if (includeNumbers) {
   allChar += numbers;
 }
 
+// Loop continues until password made 
+
 for (i = 0; i < passLength; i++) {
   password += allChar[Math.floor(Math.random() * allChar.length)];
 
@@ -63,7 +65,7 @@ function writePassword(password) {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword(password));
+generateBtn.addEventListener("click", function() {writePassword(password)});
 
 
 
